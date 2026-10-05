@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Beshoy Code - تجارب رقمية ومشاريع ويب من تنفيذ Beshoy Eshak." />
+    <title>Beshoy Code | تجارب رقمية تصنع الفرق</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./components.css" />
+    <link rel="stylesheet" href="./animations.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+    <link rel="stylesheet" href="./search.css" />
+</head>
+
+<body>
+    <div class="page-shell">
+        <header class="site-header">
+            <nav class="navbar container">
+                <a href="index.html" class="brand" aria-label="Beshoy Code">
+                    <span class="brand-mark">BC</span>
+                    <span>
+                        <strong>Beshoy Code</strong>
+                        <small>By Code | Beshoy Eshak</small>
+                    </span>
+                </a>
+
+                <button class="nav-toggle" aria-label="فتح القائمة" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+
+                <div class="nav-panel">
+                    <ul class="nav-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="learning.html">التعلم</a></li>
+                        <li><a href="courses.html">الكورسات</a></li>
+                        <li><a href="projects.html">المشاريع</a></li>
+                        <li><a href="practice.html">التدريب</a></li>
+                        <li><a href="search.html">بحث</a></li>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="services.html">الخدمات</a></li>
+                        <li><a href="contact.html">تواصل معنا</a></li>
+                    </ul>
+
+                    <div class="nav-tools">
+                        <div class="search-mini search-mini-home">
+                            <input id="global-search-input" type="search" placeholder="ابحث عن فكرة، لغة أو مشروع..."
+                                autocomplete="off" aria-label="بحث سريع" aria-controls="home-quick-results" />
+                            <span aria-hidden="true">⌕</span>
+                            <div class="quick-search-popover" id="home-quick-results" hidden></div>
+                        </div>
+                        <button id="theme-toggle" class="icon-btn" aria-label="تبديل الثيم">☀️</button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero section">
+                <div class="container hero-content">
+                    <div class="hero-copy reveal">
+                        <span class="eyebrow">تصميم • تطوير • تجارب رقمية</span>
+                        <h1>نحوّل الأفكار إلى تجارب ويب تنبض بالحياة</h1>
+                        <p>
+                            Beshoy Code مساحة لصناعة واجهات رقمية واضحة، سريعة، ومصممة بعناية لتترك أثرًا.
+                        </p>
+
+                        <div class="cta-group">
+                            <a class="btn btn-primary" href="projects.html">اكتشف المشاريع</a>
+                            <a class="btn btn-secondary" href="contact.html">ابدأ محادثة</a>
+                        </div>
+
+                        <p class="hero-signature">صناعة رقمية مستقلة بواسطة <strong>Beshoy Eshak</strong></p>
+                    </div>
+
+                    <div class="hero-visual reveal">
+                        <div class="code-window">
+                            <div class="window-bar">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Beshoy Code&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, world!&lt;/h1&gt;
+    &lt;button&gt;Explore Projects&lt;/button&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section alt-bg" id="about-beshoy-code">
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <span class="eyebrow">عن Beshoy Code</span>
+                        <h2>هوية رقمية تبدأ من التفاصيل</h2>
+                        <p class="home-intro">نصمم ونطوّر تجارب ويب تجمع بين الشكل المدروس، الأداء السلس، والتفاعل
+                            المفيد.</p>
+                    </div>
+                    <div class="feature-grid">
+                        <article class="feature-card reveal">
+                            <div class="feature-icon">✳</div>
+                            <h3>تصميم واجهات</h3>
+                            <p>واجهات متوازنة وسهلة الاستخدام، بهوية بصرية متماسكة.</p>
+                        </article>
+                        <article class="feature-card reveal">
+                            <div class="feature-icon">⌘</div>
+                            <h3>تطوير الويب</h3>
+                            <p>مواقع تفاعلية متجاوبة مبنية بعناية لتعمل على مختلف الأجهزة.</p>
+                        </article>
+                        <article class="feature-card reveal">
+                            <div class="feature-icon">↗</div>
+                            <h3>تجارب عملية</h3>
+                            <p>أفكار تتحول إلى منتجات رقمية حقيقية يمكن استكشافها وتجربتها.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="services">
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <span class="eyebrow">الخدمات</span>
+                        <h2>من الفكرة إلى الإطلاق</h2>
+                    </div>
+                    <div class="feature-grid">
+                        <article class="feature-card reveal">
+                            <h3>مواقع تعريفية</h3>
+                            <p>حضور رقمي أنيق يوضح قصتك وخدماتك.</p>
+                        </article>
+                        <article class="feature-card reveal">
+                            <h3>واجهات منتجات</h3>
+                            <p>تجارب واضحة للمتاجر والمنصات والأدوات الرقمية.</p>
+                        </article>
+                        <article class="feature-card reveal">
+                            <h3>تطوير واجهات</h3>
+                            <p>تحويل التصاميم والأفكار إلى مواقع سريعة ومتجاوبة.</p>
+                        </article>
+                    </div>
+                    <a class="card-link home-inline-link" href="services.html">تفاصيل الخدمات ←</a>
+                </div>
+            </section>
+
+            <section class="section alt-bg" id="selected-projects">
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <span class="eyebrow">أعمال مختارة</span>
+                        <h2>مشاريع يمكنك تجربتها</h2>
+                    </div>
+                    <div class="feature-grid">
+                        <article class="feature-card reveal project-teaser"><span class="eyebrow">WEB EXPERIENCE</span>
+                            <h3>Studio Landing</h3>
+                            <p>صفحة هبوط لعلامة إبداعية بتفاصيل متحركة.</p>
+                        </article>
+                        <article class="feature-card reveal project-teaser"><span class="eyebrow">INTERACTIVE UI</span>
+                            <h3>Daily Focus</h3>
+                            <p>قائمة مهام تفاعلية تحفظ تقدمك محليًا.</p>
+                        </article>
+                        <article class="feature-card reveal project-teaser"><span class="eyebrow">COMMERCE</span>
+                            <h3>Objects Store</h3>
+                            <p>واجهة متجر مصغرة مع سلة مشتريات حية.</p>
+                        </article>
+                    </div>
+                    <a class="card-link home-inline-link" href="projects.html">استكشف كل المشاريع ←</a>
+                </div>
+            </section>
+
+            <section class="section" id="posts">
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <span class="eyebrow">POSTS BY BESHOY</span>
+                        <h2>ملاحظات من مساحة العمل</h2>
+                    </div>
+                    <div class="feature-grid posts-grid">
+                        <article class="feature-card reveal post-card"><span class="eyebrow">DESIGN</span>
+                            <h3>Good interfaces make the next step obvious.</h3>
+                            <p>Clarity is not decoration. It is how a product earns trust, one useful detail at a time.
+                            </p><small>By Beshoy Eshak</small>
+                        </article>
+                        <article class="feature-card reveal post-card"><span class="eyebrow">BUILD</span>
+                            <h3>Small interactions shape the whole experience.</h3>
+                            <p>A responsive button, a clear empty state, and a thoughtful transition can change how a
+                                product feels.</p><small>By Beshoy Eshak</small>
+                        </article>
+                        <article class="feature-card reveal post-card"><span class="eyebrow">PROCESS</span>
+                            <h3>Start with the real problem.</h3>
+                            <p>The strongest web experiences begin with understanding what people came to do.</p>
+                            <small>By Beshoy Eshak</small>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section alt-bg" id="founder">
+                <div class="container founder-band">
+                    <div class="founder-mark reveal">BE<span>✳</span></div>
+                    <div class="reveal">
+                        <span class="eyebrow">المؤسس</span>
+                        <h2>Beshoy Eshak</h2>
+                        <p>أبني في Beshoy Code تجارب ويب تجمع بين الاهتمام بالتفاصيل والوظائف التي يحتاجها الناس فعلًا.
+                        </p>
+                        <a class="card-link" href="about.html">تعرّف على Beshoy Eshak ←</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section home-contact" id="contact-cta">
+                <div class="container contact-band reveal">
+                    <div><span class="eyebrow">لديك فكرة؟</span>
+                        <h2>لنصنع شيئًا يستحق الزيارة.</h2>
+                    </div>
+                    <a class="btn btn-primary" href="contact.html">تواصل معنا</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container footer-content">
+                <div>
+                    <h4>Beshoy Code</h4>
+                    <p>استوديو رقمي لصناعة تجارب ويب واضحة ومميزة.</p>
+                </div>
+                <div>
+                    <h5>التنقل</h5>
+                    <ul>
+                        <li><a href="services.html">الخدمات</a></li>
+                        <li><a href="projects.html">المشاريع</a></li>
+                        <li><a href="practice.html">التدريب</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>تواصل</h5>
+                    <ul>
+                        <li><a href="contact.html">تواصل معنا</a></li>
+                        <li><a href="about.html">من نحن</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./html.js"></script>
+    <script src="./css.js"></script>
+    <script src="./javascript.js"></script>
+    <script src="./python.js"></script>
+    <script src="./projects.js"></script>
+    <script src="./challenges.js"></script>
+    <script src="./storage.js"></script>
+    <script src="./theme.js"></script>
+    <script src="./progress.js"></script>
+    <script src="./search.js"></script>
+    <script src="./ui.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>

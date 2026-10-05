@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ابحث في دروس ودورات ومشاريع Beshoy Code بالعربية والإنجليزية." />
+    <title>Search | Beshoy Code</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./components.css" />
+    <link rel="stylesheet" href="./animations.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+    <link rel="stylesheet" href="./search.css" />
+</head>
+
+<body>
+    <div class="page-shell">
+        <header class="site-header">
+            <nav class="navbar container">
+                <a href="index.html" class="brand" aria-label="Beshoy Code"><span
+                        class="brand-mark">BC</span><span><strong>Beshoy Code</strong><small>By Code | Beshoy
+                            Eshak</small></span></a>
+                <button class="nav-toggle" aria-label="فتح القائمة"
+                    aria-expanded="false"><span></span><span></span><span></span></button>
+                <div class="nav-panel">
+                    <ul class="nav-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="learning.html">التعلم</a></li>
+                        <li><a href="courses.html">الكورسات</a></li>
+                        <li><a href="projects.html">المشاريع</a></li>
+                        <li><a href="practice.html">التدريب</a></li>
+                        <li><a href="search.html" class="active">بحث</a></li>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="services.html">الخدمات</a></li>
+                        <li><a href="contact.html">تواصل معنا</a></li>
+                    </ul>
+                    <div class="nav-tools"><button id="theme-toggle" class="icon-btn"
+                            aria-label="تبديل المظهر">☀️</button></div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="search-page container">
+            <section class="search-hero">
+                <span class="eyebrow">استكشف محتوى Beshoy Code</span>
+                <h1>Search</h1>
+                <p>ابحث عن الفكرة التي تريد تنفيذها، وسنقترح لك الدروس والمشاريع الأقرب.</p>
+                <form class="full-search-form" id="full-search-form" role="search">
+                    <span aria-hidden="true">⌕</span>
+                    <input id="full-search-input" type="search" placeholder="مثال: عايز أتعلم أعمل موقع"
+                        autocomplete="off" aria-label="ابحث في محتوى الموقع" />
+                    <button type="button" id="clear-search" aria-label="مسح البحث">×</button>
+                    <button type="submit" class="search-submit">بحث</button>
+                </form>
+                <div class="suggested-topics" id="suggested-topics">
+                    <span>موضوعات مقترحة</span>
+                    <button type="button" data-search-topic="HTML">HTML</button><button type="button"
+                        data-search-topic="CSS">CSS</button><button type="button"
+                        data-search-topic="JavaScript">JavaScript</button><button type="button"
+                        data-search-topic="Python">Python</button><button type="button"
+                        data-search-topic="تصميم مواقع">تصميم مواقع</button><button type="button"
+                        data-search-topic="Projects">Projects</button>
+                </div>
+            </section>
+
+            <section class="search-layout">
+                <aside class="search-sidebar">
+                    <div class="filter-block">
+                        <h2>نوع المحتوى</h2>
+                        <div class="filter-options" id="type-filters">
+                            <button class="search-filter active" type="button"
+                                data-filter-type="all">الكل</button><button class="search-filter" type="button"
+                                data-filter-type="course">Courses</button><button class="search-filter" type="button"
+                                data-filter-type="lesson">Lessons</button><button class="search-filter" type="button"
+                                data-filter-type="project">Projects</button><button class="search-filter" type="button"
+                                data-filter-type="challenge">Challenges</button><button class="search-filter"
+                                type="button" data-filter-type="training">Training</button><button class="search-filter"
+                                type="button" data-filter-type="service">Services</button><button class="search-filter"
+                                type="button" data-filter-type="post">Posts</button>
+                        </div>
+                    </div>
+                    <div class="filter-block">
+                        <h2>لغة البرمجة</h2>
+                        <div class="filter-options" id="language-filters">
+                            <button class="search-filter active" type="button"
+                                data-filter-language="all">الكل</button><button class="search-filter" type="button"
+                                data-filter-language="HTML">HTML</button><button class="search-filter" type="button"
+                                data-filter-language="CSS">CSS</button><button class="search-filter" type="button"
+                                data-filter-language="JavaScript">JavaScript</button><button class="search-filter"
+                                type="button" data-filter-language="Python">Python</button>
+                        </div>
+                    </div>
+                    <div class="filter-block">
+                        <h2>المستوى</h2><select id="level-filter" aria-label="تصفية حسب المستوى">
+                            <option value="all">كل المستويات</option>
+                            <option value="Beginner">Beginner</option>
+                            <option value="Intermediate">Intermediate</option>
+                            <option value="Advanced">Advanced</option>
+                            <option value="Expert">Expert</option>
+                        </select>
+                    </div>
+                    <section class="recent-searches">
+                        <div class="recent-heading">
+                            <h2>عمليات البحث الأخيرة</h2><button type="button" id="clear-history">مسح السجل</button>
+                        </div>
+                        <div id="recent-search-list"></div>
+                    </section>
+                </aside>
+
+                <section class="search-results-section" aria-live="polite">
+                    <div class="results-heading">
+                        <div><span class="eyebrow" id="results-eyebrow">اقتراحات للبدء</span>
+                            <h2 id="results-title">ماذا تريد أن تصنع؟</h2>
+                        </div><span class="results-count" id="results-count"></span>
+                    </div>
+                    <div id="search-results-grid" class="search-result-grid"></div>
+                    <div id="search-empty-state" class="search-empty" hidden><span class="empty-icon">⌕</span>
+                        <h3>لم نجد نتائج مطابقة لبحثك.</h3>
+                        <p>جرّب كلمات قريبة أو اختر أحد الموضوعات التالية:</p>
+                        <div class="empty-suggestions"><button type="button"
+                                data-search-topic="HTML">HTML</button><button type="button"
+                                data-search-topic="CSS">CSS</button><button type="button"
+                                data-search-topic="JavaScript">JavaScript</button><button type="button"
+                                data-search-topic="Python">Python</button><button type="button"
+                                data-search-topic="Projects">Projects</button><button type="button"
+                                data-search-topic="Web Development">Web Development</button></div>
+                    </div>
+                </section>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container footer-content">
+                <div>
+                    <h4>Beshoy Code</h4>
+                    <p>ابحث عن الخطوة التالية في رحلتك الرقمية.</p>
+                </div>
+                <div>
+                    <h5>استكشف</h5>
+                    <ul>
+                        <li><a href="learning.html">التعلم</a></li>
+                        <li><a href="projects.html">المشاريع</a></li>
+                        <li><a href="practice.html">التدريب</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./html.js"></script>
+    <script src="./css.js"></script>
+    <script src="./javascript.js"></script>
+    <script src="./python.js"></script>
+    <script src="./projects.js"></script>
+    <script src="./challenges.js"></script>
+    <script src="./storage.js"></script>
+    <script src="./theme.js"></script>
+    <script src="./progress.js"></script>
+    <script src="./search.js"></script>
+    <script src="./ui.js"></script>
+    <script src="./search-page.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>

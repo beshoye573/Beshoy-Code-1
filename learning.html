@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تعلم البرمجة | Beshoy Code</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./components.css" />
+    <link rel="stylesheet" href="./animations.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+</head>
+
+<body>
+    <div class="page-shell">
+        <header class="site-header">
+            <nav class="navbar container">
+                <a href="index.html" class="brand" aria-label="Beshoy Code">
+                    <span class="brand-mark">BC</span>
+                    <span>
+                        <strong>Beshoy Code</strong>
+                        <small>By Code | Beshoy Eshak</small>
+                    </span>
+                </a>
+                <button class="nav-toggle" aria-label="فتح القائمة" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+                <div class="nav-panel">
+                    <ul class="nav-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="learning.html" class="active">التعلم</a></li>
+                        <li><a href="courses.html">الكورسات</a></li>
+                        <li><a href="projects.html">المشاريع</a></li>
+                        <li><a href="practice.html">التدريب</a></li>
+                        <li><a href="search.html">بحث</a></li>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="services.html">الخدمات</a></li>
+                        <li><a href="contact.html">تواصل معنا</a></li>
+                    </ul>
+                    <div class="nav-tools">
+                        <div class="search-mini">
+                            <input id="global-search-input" type="search" placeholder="ابحث عن دورة أو درس..." />
+                            <span>⌕</span>
+                        </div>
+                        <button id="theme-toggle" class="icon-btn" aria-label="تبديل الثيم">☀️</button>
+                        <a href="#favorites" class="icon-btn" aria-label="المفضلة">☆</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="page-main learning-page">
+            <section class="page-hero section">
+                <div class="container">
+                    <div class="hero-copy reveal">
+                        <span class="eyebrow">منصة التعلم</span>
+                        <h1>ابدأ رحلتك في عالم البرمجة</h1>
+                        <p>تعلم البرمجة من الصفر حتى الاحتراف.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container">
+                    <div class="toolbar reveal">
+                        <div class="search-panel">
+                            <input id="learning-search" type="search"
+                                placeholder="ابحث عن دورة، درس، لغة، موضوع أو مشروع" />
+                        </div>
+                        <div class="filter-group" id="learning-filters">
+                            <button class="filter-chip active" data-filter="all">الكل</button>
+                            <button class="filter-chip" data-filter="Beginner">مبتدئ</button>
+                            <button class="filter-chip" data-filter="Intermediate">متوسط</button>
+                            <button class="filter-chip" data-filter="Advanced">متقدم</button>
+                            <button class="filter-chip" data-filter="Expert">احترافي</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section alt-bg">
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <span class="eyebrow">متابعة</span>
+                        <h2>تابع التعلم</h2>
+                    </div>
+                    <div id="continue-learning" class="continue-panel"></div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <span class="eyebrow">موصى بها</span>
+                        <h2>الكورسات الموصى بها</h2>
+                    </div>
+                    <div id="recommended-courses" class="cards-grid"></div>
+                </div>
+            </section>
+
+            <section class="section alt-bg">
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <span class="eyebrow">الأحدث</span>
+                        <h2>آخر الدروس</h2>
+                    </div>
+                    <div id="latest-lessons" class="lesson-list"></div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <span class="eyebrow">لوحة التحكم</span>
+                        <h2>تعلّمي</h2>
+                    </div>
+                    <div id="dashboard" class="dashboard-grid"></div>
+                </div>
+            </section>
+
+            <section class="section alt-bg" id="favorites">
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <span class="eyebrow">المفضلة</span>
+                        <h2>الدروس المفضلة</h2>
+                    </div>
+                    <div id="favorite-lessons" class="lesson-list"></div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <span class="eyebrow">اكتشف</span>
+                        <h2>كل مسارات التعلم</h2>
+                    </div>
+                    <div id="all-courses-grid" class="cards-grid"></div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container footer-content">
+                <div>
+                    <h4>Beshoy Code</h4>
+                    <p>تعلم البرمجة بواجهة حديثة ومحتوى عملي.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./html.js"></script>
+    <script src="./css.js"></script>
+    <script src="./javascript.js"></script>
+    <script src="./python.js"></script>
+    <script src="./projects.js"></script>
+    <script src="./challenges.js"></script>
+    <script src="./storage.js"></script>
+    <script src="./theme.js"></script>
+    <script src="./progress.js"></script>
+    <script src="./search.js"></script>
+    <script src="./ui.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>

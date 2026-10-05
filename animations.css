@@ -1,0 +1,64 @@
+.reveal {
+    opacity: 0;
+    transform: translateY(18px) scale(0.98);
+    animation: reveal 0.7s ease forwards;
+}
+
+@keyframes reveal {
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.card,
+.course-card,
+.lesson-card,
+.project-card,
+.feature-card,
+.progress-card,
+.stat-card {
+    transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+}
+
+.course-card:hover,
+.lesson-card:hover,
+.project-card:hover,
+.feature-card:hover,
+.card:hover {
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: 0 28px 80px rgba(79, 70, 229, 0.12);
+}
+
+.btn:hover,
+.icon-btn:hover,
+.action-btn:hover,
+.filter-chip:hover {
+    transform: translateY(-2px);
+}
+
+.progress-bar span {
+    animation: growProgress 1s ease forwards;
+}
+
+@keyframes growProgress {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-up {
+    animation: fadeInUp 0.6s ease forwards;
+}

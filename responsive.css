@@ -1,0 +1,94 @@
+@media (max-width: 780px) {
+    .founder-band {
+        grid-template-columns: 1fr;
+    }
+
+    .founder-mark {
+        min-height: 120px;
+    }
+
+    .contact-band {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .contact-band .btn {
+        width: 100%;
+    }
+
+    .project-dialog-view {
+        height: 58vh;
+        min-height: 250px;
+    }
+
+    .course-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .course-sidebar {
+        position: static;
+    }
+
+    .lesson-item,
+    .search-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .lesson-actions {
+        align-self: stretch;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .toolbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filter-group {
+        width: 100%;
+    }
+
+    .filter-chip {
+        flex: 1;
+    }
+}
+
+@media (max-width: 560px) {
+    .section {
+        padding: 3.5rem 0;
+    }
+
+    .hero-copy h1 {
+        font-size: 2.2rem;
+    }
+
+    .cta-group {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .stats-row {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .project-actions .btn,
+    .project-actions .action-btn {
+        flex: 1 1 100%;
+    }
+
+    .project-dialog {
+        width: calc(100vw - 1rem);
+        max-height: calc(100dvh - 1rem);
+    }
+
+    .project-dialog-view {
+        height: 62vh;
+        min-height: 220px;
+    }
+}
